@@ -1,0 +1,23 @@
+{
+  "name": "@kfed/eslint-formatter-gitlab",
+  "version": "1.0.0",
+  "description": "Variation for included in eslint junit formatter, especially for usage in Gitlab CI",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kyr/eslint-formatter-gitlab"
+  },
+
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "keywords": ["eslint", "formatter", "junit", "gitlab"],
+  "author": "Kyrylo Fedorov <kyrylo.fedorov@x2sy.com> (https://megogo.net)",
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-recommended": "4.0.0",
+    "tape": "4.10.1",
+    "tap-xunit": "2.3.0"
+  }
+}
