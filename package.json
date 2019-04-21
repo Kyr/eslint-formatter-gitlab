@@ -7,12 +7,16 @@
     "type": "git",
     "url": "https://github.com/Kyr/eslint-formatter-gitlab"
   },
-
   "main": "index.js",
   "scripts": {
-    "test": "node test/index.js"
+    "test": "eslint . && tape test/**/*.js lib/**/test/*.js"
   },
-  "keywords": ["eslint", "formatter", "junit", "gitlab"],
+  "keywords": [
+    "eslint",
+    "formatter",
+    "junit",
+    "gitlab"
+  ],
   "author": "Kyrylo Fedorov <kyrylo.fedorov@x2sy.com> (https://megogo.net)",
   "devDependencies": {
     "eslint": "5.16.0",
