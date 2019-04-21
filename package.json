@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/Kyr/eslint-formatter-gitlab"
   },
+	"files": [
+		"./lib"
+	],
   "main": "index.js",
   "scripts": {
     "test": "eslint . && tape test/**/*.js lib/**/test/*.js"
