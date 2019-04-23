@@ -1,30 +1,35 @@
 {
-  "name": "@kfed/eslint-formatter-gitlab",
-  "version": "1.0.0",
-  "description": "Variation of included in eslint junit formatter, especially for usage in CE Gitlab CI",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Kyr/eslint-formatter-gitlab"
-  },
+	"name": "@kfed/eslint-formatter-gitlab",
+	"version": "1.0.0",
+	"description": "Variation of included in eslint junit formatter, especially for usage in CE Gitlab CI",
+	"license": "ISC",
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Kyr/eslint-formatter-gitlab"
+	},
 	"files": [
 		"./lib"
 	],
-  "main": "index.js",
-  "scripts": {
-    "test": "eslint . && tape test/**/*.js lib/**/test/*.js"
-  },
-  "keywords": [
-    "eslint",
-    "formatter",
-    "junit",
-    "gitlab"
-  ],
-  "author": "Kyrylo Fedorov",
-  "devDependencies": {
-    "eslint": "5.16.0",
-    "eslint-config-recommended": "4.0.0",
-    "tape": "4.10.1",
-    "tap-xunit": "2.3.0"
-  }
+	"main": "index.js",
+	"scripts": {
+		"test": "eslint . && tape test/**/*.js lib/**/test/*.js",
+		"coverage": "nyc tape test/**/*.js lib/**/test/*.js"
+	},
+	"keywords": [
+		"eslint",
+		"formatter",
+		"junit",
+		"gitlab"
+	],
+	"author": "Kyrylo Fedorov",
+	"devDependencies": {
+		"eslint": "5.16.0",
+		"eslint-config-recommended": "4.0.0",
+		"tape": "4.10.1",
+		"tap-xunit": "2.3.0",
+		"nyc": "14.0.0"
+	}
 }
