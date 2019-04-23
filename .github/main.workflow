@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "Shallow check" {
   on = "push"
   resolves = ["Check code style"]
 }
@@ -11,7 +11,7 @@ action "Check code style" {
 
 workflow "Test" {
   on = "pull_request"
-  resolves = ["GitHub Action for npm"]
+  resolves = ["Test with coverage"]
 }
 
 action "Setup" {
@@ -19,7 +19,7 @@ action "Setup" {
   args = "install"
 }
 
-action "GitHub Action for npm" {
+action "Test with coverage" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Setup"]
   args = "run coverage"
