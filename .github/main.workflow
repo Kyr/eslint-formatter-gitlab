@@ -5,7 +5,8 @@ workflow "New workflow" {
 
 action "Check code style" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  runs = "npx eslint . && echo \"Lint done\""
+  runs = "npx"
+  args = "eslint . "
 }
 
 workflow "Test" {
@@ -21,5 +22,5 @@ action "Setup" {
 action "GitHub Action for npm" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Setup"]
-  args = "coverage"
+  args = "run coverage"
 }
