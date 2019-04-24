@@ -1,6 +1,6 @@
 {
 	"name": "@kfed/eslint-formatter-gitlab",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Variation of included in eslint junit formatter, especially for usage in CE Gitlab CI",
 	"license": "ISC",
 	"engines": {
@@ -11,8 +11,11 @@
 		"url": "https://github.com/Kyr/eslint-formatter-gitlab"
 	},
 	"files": [
-		"./lib"
+		"lib"
 	],
+	"directories": {
+		"lib": "./lib"
+	},
 	"main": "index.js",
 	"scripts": {
 		"test": "eslint . && tape test/**/*.js lib/**/test/*.js",
