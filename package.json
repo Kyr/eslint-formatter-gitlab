@@ -16,7 +16,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "eslint . && tape test/**/*.js lib/**/test/*.js",
-		"coverage": "nyc tape test/**/*.js lib/**/test/*.js"
+		"coverage": "nyc --reporter=lcov tape test/**/*.js lib/**/test/*.js"
 	},
 	"keywords": [
 		"eslint",
