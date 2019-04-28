@@ -1,5 +1,24 @@
-# eslint-formatter-gitlab [![npm version](https://badge.fury.io/js/%40kfed%2Feslint-formatter-gitlab.svg)](https://badge.fury.io/js/%40kfed%2Feslint-formatter-gitlab)
+# eslint-formatter-gitlab
+[npm](https://www.npmjs.com/package/@kfed/eslint-formatter-gitlab)
 Variation for `eslint-formatter-junit`, especially for usage in Gitlab CI
+
+## Usage
+Install, as same as other npm package:
+```bash
+npm install @kdef/eslit-formatter-gitlab
+```
+
+Add to `.gitlab-ci.yml`
+```yml
+test:lint:
+  stage: test
+  script:
+    - time npm install --prefer-offline --no-optional --silent
+    - npm run lint --silent -- --no-color --quiet --format @kfed/gitlab --output-file ./lint.junit.xml
+  artifacts:
+    reports:
+      junit: ./lint.junit.xml
+```
 
 ## Approaches
 ### Very first
