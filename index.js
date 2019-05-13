@@ -11,6 +11,7 @@ module.exports = xmlTemplate;
  * @return {string}
  */
 function xmlTemplate (results) {
+	results = results.filter(({errorCount}) => errorCount); //Filter out results without errors
 	const formattedResults = resultsFormatter(results);
 	const testSuite = xml.createNode('testsuite', {
 		id:       'org.eslint',
