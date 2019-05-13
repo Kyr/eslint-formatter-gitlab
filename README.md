@@ -1,10 +1,12 @@
 # eslint-formatter-gitlab
+Fork from: https://github.com/Kyr/eslint-formatter-gitlab
+
 Variation for `eslint-formatter-junit`, especially for usage in Gitlab CI
 
 ## Usage
-Install from [npm](https://www.npmjs.com/package/@kfed/eslint-formatter-gitlab), as same as other npm package:
+Install from [npm](https://www.npmjs.com/package/@seahorsepip/eslint-formatter-gitlab), as same as other npm package:
 ```bash
-npm install --save-dev @kfed/eslint-formatter-gitlab
+npm install --save-dev @seahorsepip/eslint-formatter-gitlab
 ```
 
 Add to `.gitlab-ci.yml`

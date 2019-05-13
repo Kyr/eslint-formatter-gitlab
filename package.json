@@ -1,14 +1,14 @@
 {
-	"name": "@kfed/eslint-formatter-gitlab",
+	"name": "@seahorsepip/eslint-formatter-gitlab",
 	"version": "2.0.2",
 	"description": "Variation of included in eslint junit formatter, especially for usage in CE Gitlab CI",
-	"license": "ISC",
+	"license": "MIT",
 	"engines": {
 		"node": ">=10.0.0"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Kyr/eslint-formatter-gitlab"
+		"url": "https://github.com/seahorsepip/eslint-formatter-gitlab"
 	},
 	"files": [
 		"lib"
@@ -27,7 +27,7 @@
 		"junit",
 		"gitlab"
 	],
-	"author": "Kyrylo Fedorov",
+	"author": "Thomas Gladdines",
 	"devDependencies": {
 		"eslint": "5.16.0",
 		"eslint-config-recommended": "4.0.0",
