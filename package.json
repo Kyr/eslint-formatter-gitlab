@@ -1,6 +1,6 @@
 {
 	"name": "@kfed/eslint-formatter-gitlab",
-	"version": "2.0.3",
+	"version": "2.0.4-rc.0",
 	"description": "Variation of included in eslint junit formatter, especially for usage in CE Gitlab CI",
 	"license": "ISC",
 	"engines": {
